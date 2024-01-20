@@ -1,20 +1,21 @@
 body {
-    font-family: '	Copperplate', Fantasy;
+    font-family: 'Copperplate', Fantasy;
     margin: 0;
     padding: 0;
     background-color: #000000;
+    color: #fff;
 }
 
 header {
     background-color: #000000;
-    color: #fff;
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.banner img{
-    max-width: auto;
-    height: 300px;
+
+.banner img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.769);
     transition: transform 0.3s ease-in-out;
@@ -75,7 +76,14 @@ h2 {
     transform: scale(1.1);
 }
 
-/* Add a responsive design */
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+    .food-section,
+    .drink-section {
+        padding: 40px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .food-section,
     .drink-section {
